@@ -32,6 +32,8 @@ students_ssh_keys:
     key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICmDKOEPZYw4yiQLFMI4R4ndGT+pqRTkfPFjDOxRdRpi Halyk DevOps Server"
   - name: "kakharova_akmaral" 
     key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC47y7gAqujKFS5vb/31YWoTxwciLsyZsLOtHwEJm9HShBYT6yxXrrBsCYbwEDyDbxnK1JD8ZInXP1TLxh9VcbYMMi56OEbX/zg06xYYy8oSTQkhQRCg1xZaHWQOg7TBkqOEaFpQssOWUgrsI+Ui8A8gLcz4Jgc+C51uHD/MdzVBo1XDMWLrVFQ/TRkSXFqHYRBKlKtrQvdACdrnaMc/atJsHHm2Hwce64g1Cp/Amr8I5BSFnyM7gEoJQEDy1Z/yBXj1TBmEoxECIh5C/LbTK/0s37WxPTWFeeYy9gZrCwrICfg00G7Fkz2rYAmcQUHa6PyJw/EuQc9MiaYkk6ZecTv rsa-key-20221002"
+  - name: "alexey_kolesnikov"
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/gnmbE/EOn6CO/Vm5fEf1IWY9Gn4an0aAs+mFzTzX19wBp96v8r7NuHo/fJXLyr3J98dc74hS3G7Hdt/kXC1ZVhkusGo63uFPQOYiW693LJlQG4zlVH0znYF00Q1taF6GOAmJI7mYu8Rg4i31XiPk2wj7lvhNL32JFlt5uIh/+3g08YeVcv8SfJ86CDm1P9FH8EX/1NtG5excS46Omk/cmcz6MwzjC8wRy95Vu1ijUZ7ezvAg7zU+rABZGOiG7/X69jsMzyPAowEbufBnrgaKCMclnud8ZGT1Vt0WKx2CZJQwIDWvEzyJHFnX7AbgkOq+GI6W7DesjV1KWxU2rvef"
 Cписок студентов:
     "boldachyov_marat",
     "adil_kumashev",
@@ -70,3 +72,4 @@ Cписок студентов:
     "alexandr_ramazanov",
     "valikhan_utemissov",
     "lector_nurlan",
+    "alexey_kolesnikov"
