@@ -1,5 +1,7 @@
 
 students_ssh_keys:
+  - name: "abulkhairov_serik"
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDpecJwncVIc3qicvC1H8fdxa5e2722tTO95aby8Bf7c0Fp9djFeZ25mX2rpF3/dSgUjoQc5yKqRna2BG6u6Huf6jpnXIfdXE3a+dRJf2rlYkdyoLBqA9SZ504/tIAbXZ+m6GI21S2p9EpxOqsVe+fF7GS/VxQ5gtHXX3hrNd5AORPGNkhx76cZT7DWjuN7SYb0ihuyzvd24S8wAEnCxpkOnQnSbezGtmclVnpObLKEuAUMbNuyHxBwJ8F1/PqrX/0av4yhVvoQGRMQ4AOAFglgIsJVUep2nS9+QRUPANex+WXPOHFO+ZsmFDYqlQWVrDNpwDf8JaZe1Rsf7gRxs35q9JvX/dZBMKTnC9K0ayVmrgrgzEQVnpXvswaIcsqvnw86h06UkWBFFu/YFgGXRkZxb7QWZXsXDOS3Br5/pf2XY/wgUwE+lyBySe940r0EQLFChvDmxyULnVO4Y5PbChyY7b8tQa353oroLrXEL6uyABCBL+UQrj81W+HCA/IaEEs= serikabulkhairov@MacBook-Air-Serik.local"
   - name: "samat.toibazarov"
     key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDDNZPgE6CUjNjqRWzvJruggAMm+/6XKP2TTZqad5d1D samlabs821"
   - name: "daulet"
