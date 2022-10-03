@@ -1,21 +1,15 @@
+student_vm_hostname: "{{ inventory_hostname.split('.') }}"
+student_vm: "{{ student_vm_hostname[0] }}"
 
 students_ssh_keys:
   - name: "abulkhairov_serik"
     key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDpecJwncVIc3qicvC1H8fdxa5e2722tTO95aby8Bf7c0Fp9djFeZ25mX2rpF3/dSgUjoQc5yKqRna2BG6u6Huf6jpnXIfdXE3a+dRJf2rlYkdyoLBqA9SZ504/tIAbXZ+m6GI21S2p9EpxOqsVe+fF7GS/VxQ5gtHXX3hrNd5AORPGNkhx76cZT7DWjuN7SYb0ihuyzvd24S8wAEnCxpkOnQnSbezGtmclVnpObLKEuAUMbNuyHxBwJ8F1/PqrX/0av4yhVvoQGRMQ4AOAFglgIsJVUep2nS9+QRUPANex+WXPOHFO+ZsmFDYqlQWVrDNpwDf8JaZe1Rsf7gRxs35q9JvX/dZBMKTnC9K0ayVmrgrgzEQVnpXvswaIcsqvnw86h06UkWBFFu/YFgGXRkZxb7QWZXsXDOS3Br5/pf2XY/wgUwE+lyBySe940r0EQLFChvDmxyULnVO4Y5PbChyY7b8tQa353oroLrXEL6uyABCBL+UQrj81W+HCA/IaEEs= serikabulkhairov@MacBook-Air-Serik.local"
-  - name: "samat.toibazarov"
-    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDDNZPgE6CUjNjqRWzvJruggAMm+/6XKP2TTZqad5d1D samlabs821"
-  - name: "daulet"
-    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3fPUJsUL6gNIUuVpoNukcpSqfePimmdba0psvSNvVZVTR4CBB1tO70BtL9m9WBQ2hQtzbgr6UyN3EZq4ZCSRpRtOnL7rVqMr0ETb5G3GaRCB0rPj+D+Iwj4aXm3rJEib9TPC2ao0veF7u8ZqqGsiJHKznclW4o4Uyi6Sq0N2CX4wk95rwiVVOr6j1P+K5Uuz7vawGekBbpB5Apj/fRWtBc3vFgV7iMWL2UJva2GMlniCAI1do7+SI57tc5pzajj1YqHh7a08Aj1liWaDXPX1cHtnq5BORgZttmi+DxcfieG+badnBYzKn9zK9jx65rhvPudn2jbdTzlihXLgNR5P/ root@srvalm"
-  - name: "tamerlan.bimzhanov"
+  - name: "bimzhanov_tamerlan"
     key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDG7HMqVD3pYpKv0Wczo4QeN5VphStlWqEZudLyAj8u6i4qujm0n2mc0MBv0vhkwu7vMmaXQfQWx9DiG3n84ijAmJWdQGM/KISJ3R3u/e95BovPFX7wUVhN2jJG6D+oyuBJGKJ54YXW+t0gXdDtli1jJdrs4DPiOCrykqb4DtWp5ggCgJ7GjQBWUZXCO6yy4u65C5jqe3tb/arRkaDnae2BwRRoupNTqWDOroOtVzDyZjJu0puV0Q7UlK8mjSeJtKHKFhpC2HUxKJY9s1V/7UHu3sWpJJsSd+Nh5bNyysMZPqp5QW8obFp97DI374wcgwIi0N9ReYNWPtR9MF5NGhWF1AsEkeepyye5jam5Ctv4hpbrR0c8mI1sR2es0jfhus5eEAhoriheMPvuLcqiHPdjF5Ey+vb2HRFElJ8fn5arV6UCj3ZF2+DYRgERYn4NkqLyFsbE4uHpyUSoJSMoNhGZdYukSUIsFdqyfMDUDkazLpNvoOaDz7bSOXSNJ2Hpuxc= leaf@tree"
-  - name: "boldachyov_marat"
-    key: "#SSH PUBLIC KEY"
   - name: "bekezhan_nurlan"
     key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCo4QKJ59kCL65dFGpo+0P/2h8oiqFipntGARPOtSdlvKYXpFyEPJfIRZ0ZCxpb5V0gzAaJcxbvDrzny3Ob1V+jlYqAN6ZxkKiCatTr8SKAIeJ/q6TvRmAAHt/SzHiW6MiWusLLKQoZY60hIndVcxlFix3I4bv+FU6X43/3+Lf5HBJX+Wm9sFMv3cNUDwTSPejh+GokZ4r0RQS0RCZ27xj+3Eoa5rr2LY8CbF/sXJBbWtgmbHgj0x8S2G2O4OCzq5mrOzkUZTVifQaU1LY4vXODdO9rIGD64Nmag/jwsBZbmBfcbjIcYaMVYZLpHmLPv3LmU40+TYcio1J2sgSDYEPlS+xkSEnn90sETd4x7rFMOxgOb73C59Sp0r0yDecp4ktdmKLukvvX0fZQd4UmmujNw6katweOfTRfQVpbBz+c69ovatAP7wU9GKFyKFWyDQGxIEtI3UapORvsMGEIAOhxyOsCaAo1jLKNeslujmeGwQtItodUfQT+v2ltIjoO3e7aCMzkv2yicoAOnSKBKFoBnRpG+24PqWugMyINTwJkqYNme0FSUeWjGQkN6LbJcK8kJxjfWXjnA0+ojJEvxATFUr+wBpKY06VjUUpbgmMK8DVLORK4Dz40bWtwHgt9AeNcQFHPlr5RI8ObRjOnRCZEmOqgwGzPg1CRznN9MVSQnw== nolan@nolannn"
   - name: "batyrkhan_asanali"
     key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDXidZguF5D7zNgAEqVu1fmx1AlLJ1D+KMzapUPlzxHg03dgmcLLMuKCJLBqdfe/Fh5LctFaC2mZZLTGmDQv5qIjJW3otj4kmRtGghQSpguLAgoTWOLHx+aKK4rnQTucoSc7WtKdMe1rrPnSzJHZpZnR4xTGjQVgRgIMx6nA1ptBrqkTM3HATa+7uZCeEsca9UoB3fr/gF1qZrnVeU99d8UQlMD9C3HTB/Wh5+arDQPf1XU6EKmFA2ZCWtFlhkI87VB/DSN0zlQ8wSIx0d50Y2OrugTpEpMl3WgatsxY6n3Q/Nk1u0Kjbqt6Fvzxm13OhnqYV3HC9vzz6oz+Sd3OpWV4+bvdkcs/e9yowWBEBKkre0lrAFDoT7nSiSITo2xzGNbDVtnVtseXU53w0WVolKL4s/7V+lkyXjahnbyF55NAGKWemjTwL7SG5iP5eYKOWZx17y+hzcqgvLV0G32hIp4D1ykcG3CrSHWLCSNTa0vLx9CHAyJvYAmJqG2YiguBRs= assanalibatyrkhan@MacBook-Air-Asanali.local"
-  - name: "alimukhamed_tlekbai"
-    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIArosjr7f5HbR7VwXj9owytGpWHj6PZNkKTfV2jrwCr3 atlekbai@tor"
   - name: "alimukhamed_tlekbai"
     key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN9eVfQaMRVHZHB0MP/flfdPdKUUA8z6eglI1kZqPLEB atlekbai@Alimukhameds-MacBook-Pro.local"
   - name: "zulbukharov_abylaikhan"
@@ -42,42 +36,7 @@ students_ssh_keys:
     key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCdxP035nb1+OEt+KPY487YmrRwAnG2p8FURU73HTTBo/DY1pTLKSp1uujHv48oyApr+dETWkmL8YJ/PJsVYImT9vVuU4U1LCFbhLIfqkB4MNNvfqCjEeuEVRXf8TodNikev2fdrs5xzdOIOTqwlBV7x1CwsYKN4oHv08tltBiHAe4b1kc1LvK3j0ugaxUjdQcnG1dqrbXFzZ9TRvGOYmiRrd1MZEupliiCjwewhX9kl1JAnaSBOLLxKeenys5SFWHTdch7+dRKswtw9lIZJbjbdX247g7fLbwA0tJxJ68CMK0ItH/xQ7Wd0NGBqpYGV+xTz3vw0+gmTzZ7OV41ydiFe4LQmK2d+p3hSzsKQ2EgvzW+dCm4u5EruUqvz3+yaLcsmwMYA40WuGfN6P1Bg1XebgVcp7mWOHeRbpN7YMmrJkyXCrE4BFIoMNbAVcsq2ckG7MTPTMP8Om4KmFiCX05wfdTnBt5kaql11LrYvzNbyUPgsIU2v2I24piYBY5iFWs= alikhvn@MacBook-Pro-Alikhan.local"
   - name: "zhanguttin_amangeldy" 
     key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQChWr+wAjWTH8rDrPVDnOQnIqxhrSlkXo+GeoeBwwDLJ/E9haKvT1uK7D1X6MJF/XXYE6nAbhF5f8gjD2DG2zkjw0hKEdVReFI/iK3ANF3+yLVD7PWVJZWlLDV4sa0oMN6OxILCa238tWhrynLMf6JE9sbgzvFg/DHhtakPjNakm76nmAZytmLig2jdWwcIv5F7Dlnd0JSaXZhqHrRCZdIOjGv90RhNYS3m5LIabM4lJVIEBQ7jgOo3Ery4BrxIQLpc4SPG/aNRLrgOdQ6IcEhhW98povq5uNnfZqKkJev0fZqfDc9Na/VpaqlDVcsKpVbY5VTncSiUFDrmV9Fzi8sX rsa-key-20221002"
-
-Cписок студентов:
-    "boldachyov_marat",
-    "adil_kumashev",
-    "kalashnikov_kirill",
-    "zulbukharov_abylaikhan",
-    "abulkhairov_serik",
-    "aniya_boltabay",
-    "bekezhan_nurlan",
-    "batyrkhan_asanali",
-    "danil_tormin",
-    "sharipov_madiyar",
-    "mukasheva_assel",
-    "amangeldy_zhanguttin",
-    "sanzhar_kanafin",
-    "daniyar_kuatbekov",
-    "kirill_paliy",
-    "alikhan_shorin",
-    "zharmukhanbetov_ashat",
-    "niyara_muradova",
-    "bimzhanov_tamerlan",
-    "alimukhamed_tlekbai",
-    "shivczov_egor",
-    "nurseitova_aidana",
-    "vafin_alexandr",
-    "yutsevichus_yulus",
-    "nurkhan_arken",
-    "bisenova_aidana",
-    "kolesnikov_aleksei",
-    "shukurillo_baikhanov",
-    "zhumashov_temirlan",
-    "kakharova_akmaral",
-    "bakdaulet_atantayev",
-    "takha_ramazan",
-    "esinaliev_arsen",
-    "tengizbaev_quddys",
-    "alexandr_ramazanov",
-    "valikhan_utemissov",
-    "lector_nurlan",
+  - name: "vafin_alexandr"
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCzbfYeiIyfn0c7QzP/MHxbV1uMH6e0ln1rVPzhIqTatFt6Ws/PeyHfW1TDnFLSX8+xJjm5XXWnXgk1tVjwvVgAkezxPwahYxvLB5w/uPo6WcB5GxIkd1ahu9RZIILSL1apq48Ja2NoPDi4qyaT7Vmx2pcCdMLZEbPP28ol3j4OrytCkX4Mi/iwTJDnjj/UJhPJeWLZbyZ11GA740o9bxZbgGR/KZp1MuDppZTdyM4LM9HmLmDcEOUH6C5s/1pBoyZ1tRq9/ljKae2Q6FBBmtqfwlZVZT0QRuJ70RvfJsVzWLunoijlUvmuYZ/83NoYvebKXQD4njkqJ3tVQO0a69m7 tr2tol@DESKTOP-U57JLO2"
+  - name: "kalashnikov_kirill"
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC8z5LrQfbYV7am0e/XA5023e6l6BW1zi11davKEo5SbUAwGw+ShsnhfuaLlmsw7/aUOqPDzmGvlCoXdcvBN8sYn0kwD/xoT3ndkmlNkbu7vxtgdSBny1HNBpInRQXBbcwVQAYmkTNVaAdT7fA1ekn7wau9GLC6kGAEH16wxRpkt/dV4gIPj7vT0E0SgeZiA0JOwSkc3uXNVi0Vdw984k4QeTG+GF0kcDb2QTo018sm75rGcIQobOxrWFv19+kipmr41uR5dyrl0L725rcCn5HQFxJ0q/VxfVO5bHXxk9bYI+ImpJ53NR51CUnTLD63fjnU9SLeEo6mHpzeGkBamcaSjoQBs3Pic8ny00SvZZO+iFYVEn4YTIUz4vgNeTDbgH2K3NWivSD702VsPg1TZa2cPFQUoI7aH34VAEW4V4V2RDIpJ+ssP9friRCftVUUylT7mydvzk39wnbUl8PZYQ23QygMxnrESSqjOn+wHR6Bb1KTHjYxisTzyXfMZ7ftrUM= kirillkalashnikov@Air-Kirill"
